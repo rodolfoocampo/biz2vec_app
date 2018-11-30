@@ -3,11 +3,12 @@ from gensim.models import Word2Vec
 from flask import Flask
 from flask import request, render_template, flash
 from flask import render_template
+import io
 
 
 app = Flask(__name__)
 
-@app.route('/<biz_code>')
+@app.route('/model/code=<biz_code>')
 def hello_world(biz_code):
 	model = Word2Vec.load("word2vec.model")
 	prediction = model.predict_output_word([str(biz_code)])
@@ -22,5 +23,8 @@ def hello_world(biz_code):
 
 def hello(name=None):
     return render_template('hello.html', name=name)
+
+
+
 
 
