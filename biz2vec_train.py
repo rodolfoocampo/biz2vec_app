@@ -111,7 +111,7 @@ model.save("word2vec.model")
 
 
 
-prediction = model.predict_output_word(['462112'])
+prediction = model.predict_output_word(['491110', '437112', '813210', '322210', '468111', '561310', '541490'])
 
 print(prediction)
 
