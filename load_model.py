@@ -8,7 +8,7 @@ import io
 
 app = Flask(__name__)
 
-@app.route('/model/<biz_code>')
+@app.route('/model?coordinate=<biz_code>')
 def hello_world(biz_code):
 	model = Word2Vec.load("word2vec.model")
 	prediction = model.predict_output_word([str(biz_code)])
