@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style type="text/css">
+    html, body { height: 100%; margin: 0; padding: 0; }
+
+    .controls {
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+    #map { height: 60%; }
+
+    #pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 300px;
+    }
+
+    #pac-input:focus {
+    border-color: #4d90fe;
+    }
+
+    .pac-container {
+    font-family: Roboto;
+    }
+
+    #type-selector {
+    color: #fff;
+    background-color: #4d90fe;
+    padding: 5px 11px 0px 11px;
+    }
+
+    #type-selector label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+    }
+   
+    #target {
+    width: 345px;
+    } 
+    
+    .predict-button{
+      display: inline;
+      float: none;
+    }
+    #datalab-logo{
+      width: 15%;
+      
+    }
+
+    #header{
+   background-color: #1D263B;
+   border: 1px solid rgba(72, 181, 233, 0.6);
+   border-radius: 2px 2px 10px 10px;
+   text-align:center;
+   color: white;
+   font-family: 'Montserrat';
+ }
+ .header-img{
+   padding: 10px 5px 5px 5px;
+     
+    width:6%;
+ }
+  #credit{
+    font-size: 10px;
+  }
+
+ .instruction{
+   font-size: 12px;
+ }
+ #result{
+   padding: 20px;
+   border: 10px;
+ }
+ #container{
+   margin: auto;
+   width: 50%;
+   border: 3px solid #1D263B;;
+   padding: 10px;
+   border-radius: 25px;
+    
+ }
+ #zoom{
+   font-size: 14px;
+ }
+ #macro-container{
+   margin: 10px;
+ }
+ 
+    
+    </style>
+  </head>
+
+  <body>
+ <div id="header"><img class="header-img" src="http://i67.tinypic.com/28am136.png">Neural Network + Satellite Images for Urban Poverty Mapping</div>
+    
+
+    <input id="pac-input" class="controls" type="text" placeholder="Search anywhere in the world"/>
+    <div id="map"></div>
+    <div id=macro-container>
+    <div id="container">
+      <!--
+      <div id="center" class="content"></div>
+      -->
+      <button id="predict-button" class="btn btn-primary btn-lg btn-block" onclick="predict()">Is this an urban poor location?</button>
+      
+      
+      <div id="result"  ></div>
+      <div id="zoom" ></div>
+      
+    </div>
+    </div>
+    <div id="credit"> *Made with love in Mexico by students at DATALAB ITAM*</div>
+    <script type="text/javascript">
+    
+
+var map;
+
+function predict() {
+  document.getElementById("result").innerHTML = "Processing image...";
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("result").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("POST", "/model/", true);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send("location="+current_center);
+};
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 19.41716948319935, lng: -99.1397931843628}, 
+    zoom: 15,
+   mapTypeId: google.maps.MapTypeId.SATELLITE
+  });
+
+// Create the search box and link it to the UI element.
+  var input = document.getElementById('pac-input');
+  var searchBox = new google.maps.places.SearchBox(input);
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+  // Bias the SearchBox results towards current map's viewport.
+  map.addListener('bounds_changed', function() {
+    searchBox.setBounds(map.getBounds());
+    current_center = map.getCenter();
+    //document.getElementById("center").innerHTML = "You are centered at " + current_center;
+    zoom = map.getZoom();
+    document.getElementById("zoom").innerHTML = "Your current zoom is " + zoom + ". The Neural Net needs a 19 level zoom to run a prediction.";
+  });
+
+
+
+  var markers = [];
+  // Listen for the event fired when the user selects a prediction and retrieve
+  // more details for that place.
+  searchBox.addListener('places_changed', function() {
+    var places = searchBox.getPlaces();
+
+    if (places.length == 0) {
+      return;
+    }
+
+    // Clear out the old markers.
+    markers.forEach(function(marker) {
+      marker.setMap(null);
+    });
+    markers = [];
+
+    // For each place, get the icon, name and location.
+    var bounds = new google.maps.LatLngBounds();
+    places.forEach(function(place) {
+      var icon = {
+        url: place.icon,
+        size: new google.maps.Size(71, 71),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(17, 34),
+        scaledSize: new google.maps.Size(25, 25)
+      };
+
+      // Create a marker for each place.
+      markers.push(new google.maps.Marker({
+        map: map,
+        icon: icon,
+        title: place.name,
+        position: place.geometry.location
+      }));
+
+      if (place.geometry.viewport) {
+        // Only geocodes have viewport.
+        bounds.union(place.geometry.viewport);
+      } else {
+        bounds.extend(place.geometry.location);
+      }
+    });
+    map.fitBounds(bounds);
+  });
+  
+
+
+
+}
+
+
+
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf85Tgzd9lTMyCOqvQjJ79M9AHV3FY_tQ&libraries=places&callback=initMap"
+         async defer></script>
+    
+
+  </body>
+</html>
