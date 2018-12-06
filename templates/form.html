@@ -140,7 +140,7 @@ function predict() {
       document.getElementById("result").innerHTML = this.responseText;
     }
   };
-  xhttp.open("POST", "https://stark-lake-88588.herokuapp.com/load_model", true);
+  xhttp.open("POST", "https://stark-lake-88588.herokuapp.com/model", true);
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhttp.send("coordinate="+current_center);
 };
