@@ -142,7 +142,7 @@ function predict() {
   };
   xhttp.open("POST", "https://stark-lake-88588.herokuapp.com/model/", true);
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  xhttp.send("location="+current_center);
+  xhttp.send("biz_code="+current_center);
 };
 
 function initMap() {
