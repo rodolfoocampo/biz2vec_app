@@ -161,7 +161,7 @@ function initMap() {
   map.addListener('bounds_changed', function() {
     searchBox.setBounds(map.getBounds());
     current_center = map.getCenter();
-    //document.getElementById("center").innerHTML = "You are centered at " + current_center;
+    document.getElementById("center").innerHTML = "You are centered at " + current_center;
     zoom = map.getZoom();
     document.getElementById("zoom").innerHTML = "Your current zoom is " + zoom + ". The Neural Net needs a 19 level zoom to run a prediction.";
   });
