@@ -3,6 +3,7 @@ from gensim.models import Word2Vec
 from flask import Flask
 from flask import request, render_template, flash
 from flask import render_template
+import flask
 import io
 
 
