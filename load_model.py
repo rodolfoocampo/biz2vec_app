@@ -48,13 +48,13 @@ def hello(name=None):
     return render_template('form.html', name=name)
 
 
-def which_block_intersects(coord_value):
+def which_block_intersects(coordinates):
 
 	coord2 = coordinates.replace("(","")
 	coord3 = coord2.replace(")","")
 	split = coord3.split(',')
-	latitude = split[0]
-	longitude = split[1]
+	latitude = float(split[0])
+	longitude = float(split[1])
 
 
 	fp = 'df_manzana.shp'
