@@ -108,17 +108,17 @@
   </head>
 
   <body>
- <div id="header"><img class="header-img" src="http://i67.tinypic.com/28am136.png">Neural Network + Satellite Images for Urban Poverty Mapping</div>
+ <div id="header">Encuentra el negocio ideal para ese local</div>
     
 
-    <input id="pac-input" class="controls" type="text" placeholder="Search anywhere in the world"/>
+    <input id="pac-input" class="controls" type="text" placeholder="La dirección de tu local"/>
     <div id="map"></div>
     <div id=macro-container>
     <div id="container">
       <!--
       <div id="center" class="content"></div>
       -->
-      <button id="predict-button" class="btn btn-primary btn-lg btn-block" onclick="predict()">Is this an urban poor location?</button>
+      <button id="predict-button" class="btn btn-primary btn-lg btn-block" onclick="predict()">¿Qué poner aquí?</button>
       
       
       <div id="result"  ></div>
@@ -126,7 +126,7 @@
       
     </div>
     </div>
-    <div id="credit"> *Made with love in Mexico by students at DATALAB ITAM*</div>
+    <div id="credit"> *Made with love by @ocampoblanco*</div>
     <script type="text/javascript">
     
 
@@ -157,13 +157,13 @@ function initMap() {
   var searchBox = new google.maps.places.SearchBox(input);
   map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
+  var current_center;
   // Bias the SearchBox results towards current map's viewport.
   map.addListener('bounds_changed', function() {
     searchBox.setBounds(map.getBounds());
     current_center = map.getCenter();
     document.getElementById("center").innerHTML = "You are centered at " + current_center;
     zoom = map.getZoom();
-    document.getElementById("zoom").innerHTML = "Your current zoom is " + zoom + ". The Neural Net needs a 19 level zoom to run a prediction.";
   });
 
 
@@ -171,46 +171,11 @@ function initMap() {
   var markers = [];
   // Listen for the event fired when the user selects a prediction and retrieve
   // more details for that place.
-  searchBox.addListener('places_changed', function() {
-    var places = searchBox.getPlaces();
-
-    if (places.length == 0) {
-      return;
-    }
-
-    // Clear out the old markers.
-    markers.forEach(function(marker) {
-      marker.setMap(null);
-    });
-    markers = [];
-
-    // For each place, get the icon, name and location.
-    var bounds = new google.maps.LatLngBounds();
-    places.forEach(function(place) {
-      var icon = {
-        url: place.icon,
-        size: new google.maps.Size(71, 71),
-        origin: new google.maps.Point(0, 0),
-        anchor: new google.maps.Point(17, 34),
-        scaledSize: new google.maps.Size(25, 25)
-      };
-
-      // Create a marker for each place.
-      markers.push(new google.maps.Marker({
-        map: map,
-        icon: icon,
-        title: place.name,
-        position: place.geometry.location
-      }));
-
-      if (place.geometry.viewport) {
-        // Only geocodes have viewport.
-        bounds.union(place.geometry.viewport);
-      } else {
-        bounds.extend(place.geometry.location);
-      }
-    });
-    map.fitBounds(bounds);
+  var marker = new google.maps.Marker({
+    position: current_center,
+    map: map,
+    draggable:true,
+    title:"Drag me!"
   });
   
 
@@ -222,7 +187,7 @@ function initMap() {
 
     </script>
     
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf85Tgzd9lTMyCOqvQjJ79M9AHV3FY_tQ&libraries=places&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiVxpSbmFSgf2O5CAaeQ8rmmdhkR8t9mc&libraries=places&callback=initMap"
          async defer></script>
     
 
