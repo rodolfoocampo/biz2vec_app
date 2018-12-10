@@ -48,7 +48,7 @@ def hello(name=None):
     return render_template('form.html', name=name)
 
 
-def which_block_intersects(coord_value)
+def which_block_intersects(coord_value):
 
 	coord2 = coordinates.replace("(","")
 	coord3 = coord2.replace(")","")
