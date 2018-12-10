@@ -131,6 +131,7 @@
     
 
 var map;
+var current_center;
 
 function predict() {
   document.getElementById("result").innerHTML = "Processing image...";
@@ -157,7 +158,7 @@ function initMap() {
   var searchBox = new google.maps.places.SearchBox(input);
   map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
-  var current_center;
+  
   // Bias the SearchBox results towards current map's viewport.
   map.addListener('bounds_changed', function() {
     searchBox.setBounds(map.getBounds());
