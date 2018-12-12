@@ -24,8 +24,7 @@ def show_user_profile():
     # checar si hay que parsear el request a texto
 
       coordinates = request.form['location']
-      ##output = which_block_intersects(coordinates)
-      output = coordinates
+      output = which_block_intersects(coordinates)
       resp = flask.Response(output)
       resp.headers['Access-Control-Allow-Origin'] = '*'
       return resp
