@@ -40,8 +40,7 @@ units_per_block.mean()
 
 business_pairs = cdmx_eu[["nombre_act","codigo_act"]]
 unique_business_pairs = business_pairs.drop_duplicates()
-dic = unique_business_pairs.to_dict("records")
-dic
+dic = unique_business_pairs.to_dict("records")dic
 
 
 def find_activity_code(dataframe, name):
@@ -70,7 +69,7 @@ for index, activity in enumerate(activity_set):
 ## Building the Context
 
 ## Instead of words, our algorithm will be fed with businesses. Especifically, types of business. Analogous to NLP word2vec, we will build the context around each business. In this case, we will use 500m, though this will be a variable that we will modify while evaluating performance. 
-
+cdmx_actividad_y_manzanaunica.to_csv('bizbyblock.csv')
 
 grouped = cdmx_actividad_y_manzanaunica.groupby(['manzana-ageb-loc-mun-edo'])
 
@@ -78,6 +77,8 @@ grouped = cdmx_actividad_y_manzanaunica.groupby(['manzana-ageb-loc-mun-edo'])
 sentences = []
 for group in grouped:
   sentences.append(group)
+
+
 
 #We create a list of lists. Each inside list contains a sentence: a group of businesses that appear together within a block.
 # sentences contains tuples, so we grab each tuple. If we grab the second part of the tuple, we get a dataframe that contains 

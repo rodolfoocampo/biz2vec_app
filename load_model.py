@@ -24,8 +24,8 @@ def show_user_profile():
     # checar si hay que parsear el request a texto
 
       coordinates = request.form['location']
-      output = which_block_intersects(coordinates)
-      #image_location = "/Users/rodolfoocampo/Documents/Datalab/Proyectos/tensorflow-for-poets-2/real_images/" + coord6 + ".jpg"
+      ##output = which_block_intersects(coordinates)
+      output = coordinates
       resp = flask.Response(output)
       resp.headers['Access-Control-Allow-Origin'] = '*'
       return resp
