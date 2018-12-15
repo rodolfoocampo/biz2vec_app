@@ -141,7 +141,8 @@ function predict() {
       document.getElementById("result").innerHTML = this.responseText;
     }
   };
-  xhttp.open("POST", "https://stark-lake-88588.herokuapp.com/parse-coordinate", true);
+  //xhttp.open("POST", "https://stark-lake-88588.herokuapp.com/parse-coordinate", true);
+  xhttp.open("POST", "http://127.0.0.1:5000/parse-coordinate", true);
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhttp.send("location="+current_center);
 };

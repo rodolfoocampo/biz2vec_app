@@ -8,6 +8,8 @@ import io
 import geopandas as gpd
 from shapely.geometry import Point, LineString, Polygon
 from geopandas import GeoDataFrame
+import pandas as pd
+
 
 
 
@@ -30,11 +32,10 @@ def show_user_profile():
       return resp
     return
 
-@app.route('/model?coordinate=<biz_code>')
-def hello_world(biz_code):
+
+def prediction(biz_codes = [], *args):
 	model = Word2Vec.load("word2vec.model")
-	prediction = model.predict_output_word([str(biz_code)])
-	print(prediction)
+	prediction = model.predict_output_word(biz_codes)
 	return (str(prediction))
 
 
@@ -64,10 +65,59 @@ def which_block_intersects(coordinates):
 	crs = {'init' :'epsg:4326'} #http://www.spatialreference.org/ref/epsg/2263/
 	geo_df = GeoDataFrame(crs=crs, geometry=point_g)
 	join = gpd.sjoin(geo_df, blocks_poly, how="inner", op="within")
+	manzana = str(join.iloc[0]["CVE_MZA"]).lstrip("0") + ".0-" + str(join.iloc[0]["CVE_AGEB"]) + "-" + str(join.iloc[0]["CVE_LOC"]).lstrip("0") + "-"  + str(join.iloc[0]["CVE_MUN"]).lstrip("0") + "-" + str(join.iloc[0]["CVE_ENT"]).lstrip("0")
+	#final_grouping = businesses_in_block(manzana)
+
+	## remove this before cloud deployment 
+	if __name__ == "__main__":
+  		app.run(host='0.0.0.0')
+
+  	######
+
+	cdmx_actividad_y_manzanaunica = pd.read_csv('bizbyblock.csv')
+	grouped = cdmx_actividad_y_manzanaunica.groupby(['manzana-ageb-loc-mun-edo'])
+	print(manzana)
+	sentences = []
+	for group in grouped:
+	  sentences.append(group)
+
+	final_grouping = []
+	for i in range(len(sentences)):
+
+	  
+	  holder = sentences[i]
+	  current_block = holder[1]
+	  if (holder[0] == manzana):
+		for j in range(len(current_block)):
+			
+			final_grouping.append(str(current_block.iloc[j,3]))
+
+	model = Word2Vec.load("word2vec.model")
+	prediction = model.predict_output_word(final_grouping)
+	return (str(prediction))
 
 
-	manzana = str(join.iloc[0]["CVE_MZA"]).lstrip("0") + "-" + str(join.iloc[0]["CVE_AGEB"]) + "-" + str(join.iloc[0]["CVE_LOC"]).lstrip("0") + "-"  + str(join.iloc[0]["CVE_MUN"]).lstrip("0") + "-" + str(join.iloc[0]["CVE_ENT"]).lstrip("0")
-	return manzana
+	#return manzana
+
+def businesses_in_block(manzana):
+	cdmx_actividad_y_manzanaunica = pd.read_csv('bizbyblock.csv')
+	grouped = cdmx_actividad_y_manzanaunica.groupby(['manzana-ageb-loc-mun-edo'])
+
+	sentences = []
+	for group in grouped:
+	  sentences.append(group)
+
+	final_grouping = []
+	for i in range(len(sentences)):
+	  final_grouping.append([])
+	  holder = sentences[i]
+	  current_block = holder[1]
+	  if (holder[0] == manzana):
+		  for j in range(len(current_block)):
+		    final_grouping[i].append(str(current_block.iloc[j,2]))
+
+	return final_grouping[0]
+
 
 
 
