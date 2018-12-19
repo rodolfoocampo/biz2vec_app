@@ -1,0 +1,910 @@
+,nombre_act,codigo_act
+0,Beneficio de productos agrícolas,115113
+7,Servicios relacionados con la cría y explotación de animales,115210
+8,Otros servicios relacionados con la agricultura,115119
+9,"Piscicultura y otra acuicultura, excepto camaronicultura",112512
+18,Minería de hierro,212210
+19,Minería de arena y grava para la construcción,212321
+21,Otros servicios relacionados con la minería,213119
+22,Perforación de pozos petroleros y de gas,213111
+23,Minería de barita,212393
+24,Minería de otros minerales no metálicos,212399
+25,Extracción de petróleo y gas,211110
+28,Minería de sal,212391
+29,Minería de oro,212221
+32,Minería de otros minerales metálicos,212299
+47,Minería de plomo y zinc,212232
+49,Minería de carbón mineral,212110
+54,Minería de otras arcillas y de otros minerales refractarios,212329
+55,Minería de cobre,212231
+67,"Captación, tratamiento y suministro de agua realizados por el sector privado",222112
+68,"Generación, transmisión y distribución de energía eléctrica",221110
+69,"Captación, tratamiento y suministro de agua realizados por el sector público",222111
+147,Suministro de gas por ductos al consumidor final,222210
+517,Edificación de vivienda multifamiliar,236112
+518,Edificación de vivienda unifamiliar,236111
+520,"Edificación de inmuebles comerciales y de servicios, excepto la supervisión",236221
+521,Trabajos de albañilería,238130
+522,"Construcción de carreteras, puentes y similares",237312
+524,"Construcción de obras para el tratamiento, distribución y suministro de agua y drenaje",237111
+527,Instalaciones de sistemas centrales de aire acondicionado y calefacción,238222
+530,Construcción de obras para telecomunicaciones,237132
+532,Instalaciones hidrosanitarias y de gas,238221
+533,Instalaciones eléctricas en construcciones,238210
+534,Colocación de pisos flexibles y de madera,238330
+537,Colocación de muros falsos y aislamiento,238311
+538,Trabajos de pintura y otros cubrimientos de paredes,238320
+539,"Trabajos de enyesado, empastado y tiroleado",238312
+547,Otras instalaciones y equipamiento en construcciones,238290
+548,Construcción de obras de urbanización,237212
+551,Supervisión de edificación de inmuebles comerciales y de servicios,236222
+555,Construcción de obras para transporte eléctrico y ferroviario,237993
+568,"Edificación de naves y plantas industriales, excepto la supervisión",236211
+570,Otras construcciones de ingeniería civil,237999
+573,Construcción de obras de generación y conducción de energía eléctrica,237131
+596,Montaje de estructuras de acero prefabricadas,238122
+598,Otros trabajos de acabados en edificaciones,238390
+600,Otros trabajos en exteriores,238190
+620,Realización de trabajos de carpintería en el lugar de la construcción,238350
+623,Supervisión de construcción de vías de comunicación,237313
+636,Supervisión de edificación residencial,236113
+638,Preparación de terrenos para la construcción,238910
+661,Otros trabajos especializados para la construcción,238990
+675,Supervisión de construcción de obras de generación y conducción de energía eléctrica y de obras para telecomunicaciones,237133
+687,Supervisión de construcción de obras para petróleo y gas,237123
+692,"Supervisión de construcción de obras para el tratamiento, distribución y suministro de agua, drenaje y riego",237113
+711,Supervisión de división de terrenos y de construcción de obras de urbanización,237213
+739,Supervisión de construcción de otras obras de ingeniería civil,237994
+770,Construcción de plantas de refinería y petroquímica,237122
+771,Supervisión de edificación de naves y plantas industriales,236212
+803,Trabajos de cimentaciones,238110
+827,Colocación de pisos cerámicos y azulejos,238340
+833,Construcción de sistemas de distribución de petróleo y gas,237121
+1042,Instalación de señalamientos y protecciones en obras viales,237311
+1134,"Construcción de obras marítimas, fluviales y subacuáticas",237992
+1330,Montaje de estructuras de concreto prefabricadas,238121
+1650,Construcción de presas y represas,237991
+1897,Construcción de sistemas de riego agrícola,237112
+2960,Purificación y embotellado de agua,312112
+2961,Elaboración de tortillas de maíz y molienda de nixtamal,311830
+2963,Panificación tradicional,311812
+2964,Confección de otros accesorios y prendas de vestir no clasificados en otra parte,315999
+2969,Confección en serie de uniformes,315223
+2973,Confección de productos de textiles recubiertos y de materiales sucedáneos,314912
+2974,Elaboración de derivados y fermentos lácteos,311513
+2976,Confección de prendas de vestir sobre medida,315225
+2978,Fabricación de hilos para coser y bordar,313113
+2979,Acabado de productos textiles,313310
+2982,Fabricación de calzado con corte de piel y cuero,316211
+2984,"Elaboración de concentrados, polvos, jarabes y esencias de sabor para bebidas",311930
+2986,Elaboración de aceites y grasas vegetales comestibles,311222
+2992,Confección en serie de otra ropa exterior de materiales textiles,315229
+3006,"Confección de cortinas, blancos y similares",314120
+3009,"Confección, bordado y deshilado de productos textiles",314991
+3010,Elaboración de bebidas destiladas de agave,312142
+3012,Elaboración de alimentos para animales,311110
+3013,"Elaboración de dulces, chicles y productos de confitería que no sean de chocolate",311340
+3147,Elaboración de helados y paletas,311520
+3152,Fabricación de redes y otros productos de cordelería,314992
+3156,Fabricación de telas anchas de tejido de trama,313210
+3170,Confección en serie de ropa interior y de dormir,315221
+3173,"Preparación de embutidos y otras conservas de carne de ganado, aves y otros animales comestibles",311613
+3174,Conservación de guisos y otros alimentos preparados por procesos distintos a la congelación,311423
+3177,Elaboración de otros alimentos,311999
+3182,Elaboración de condimentos y aderezos,311940
+3198,"Fabricación de bolsos de mano, maletas y similares",316991
+3214,Elaboración de botanas,311910
+3218,Elaboración de hielo,312113
+3298,Panificación industrial,311811
+3299,Elaboración de refrescos y otras bebidas no alcohólicas,312111
+3301,"Confección de prendas de vestir de cuero, piel y de materiales sucedáneos",315210
+3302,Fabricación de huaraches y calzado de otro tipo de materiales,316219
+3303,Elaboración de manteca y otras grasas animales comestibles,311614
+3305,"Fabricación de otros productos de cuero, piel y materiales sucedáneos",316999
+3307,Elaboración de chocolate y productos de chocolate,311350
+3312,Fabricación de telas angostas de tejido de trama y pasamanería,313220
+3320,Curtido y acabado de cuero y piel,316110
+3322,Elaboración de harina de otros productos agrícolas,311214
+3324,Fabricación de ropa exterior de tejido de punto,315192
+3329,Confección en serie de disfraces y trajes típicos,315224
+3336,"Matanza de ganado, aves y otros animales comestibles",311611
+3370,Fabricación de banderas y otros productos textiles no clasificados en otra parte,314999
+3375,Confección en serie de camisas,315222
+3389,Elaboración de cerveza,312120
+3392,Fabricación de ropa interior de tejido de punto,315191
+3398,Elaboración de bebidas alcohólicas a base de uva,312131
+3458,Elaboración de alimentos frescos para consumo inmediato,311993
+3464,Fabricación de calzado de hule,316214
+3488,Preparación y envasado de pescados y mariscos,311710
+3492,Fabricación de telas no tejidas (comprimidas),313230
+3519,Elaboración de ron y otras bebidas destiladas de caña,312141
+3526,Preparación e hilado de fibras duras naturales,313111
+3727,Elaboración de cigarros,312221
+3734,Elaboración de harina de trigo,311212
+3739,Confección de sombreros y gorras,315991
+3740,Elaboración de café tostado y molido,311922
+3745,Elaboración de café instantáneo,311923
+3749,Beneficio del café,311921
+3761,Fabricación de calcetines y medias de tejido de punto,315110
+3764,Fabricación de calzado con corte de tela,316212
+3766,Fabricación de calzado de plástico,316213
+3805,"Corte y empacado de carne de ganado, aves y otros animales comestibles",311612
+3815,Elaboración de sidra y otras bebidas fermentadas,312139
+3822,Elaboración de otras bebidas destiladas,312149
+3833,Elaboración de puros y otros productos de tabaco,312222
+3838,Elaboración de azúcar de caña,311311
+3858,Elaboración de cereales para el desayuno,311230
+3882,Elaboración de harina de maíz,311213
+3960,Elaboración de gelatinas y otros postres en polvo,311991
+3978,Conservación de frutas y verduras por procesos distintos a la congelación y la deshidratación,311422
+3985,Elaboración de galletas y pastas para sopa,311820
+4000,Preparación y envasado de té,311924
+4176,Preparación e hilado de fibras blandas naturales,313112
+4210,Fabricación de telas de tejido de punto,313240
+4337,Deshidratación de frutas y verduras,311421
+4616,Congelación de frutas y verduras,311411
+5077,Elaboración de malta,311215
+5118,Congelación de guisos y otros alimentos preparados,311412
+5162,Fabricación de productos textiles reciclados,314993
+5271,Elaboración de féculas y otros almidones y sus derivados,311221
+5464,"Elaboración de leche en polvo, condensada y evaporada",311512
+5704,Elaboración de otros azúcares,311319
+5767,Confección de costales,314911
+5786,Fabricación de alfombras y tapetes,314110
+7204,Fabricación de telas recubiertas,313320
+10284,Elaboración de leche líquida,311511
+19411,Elaboración de pulque,312132
+19543,Fabricación de productos de plástico para el hogar con y sin reforzamiento,326191
+19544,Fabricación de otros productos de madera,321999
+19545,Fabricación de otros productos químicos básicos inorgánicos,325180
+19546,Fabricación de vidrio,327211
+19547,Fabricación de botellas de plástico,326160
+19548,Impresión de formas continuas y otros impresos,323119
+19553,Fabricación de envases y contenedores de plástico para embalaje con y sin reforzamiento,326193
+19554,Industrias conexas a la impresión,323120
+19556,Fabricación de bolsas y películas de plástico flexible,326110
+19557,Fabricación de productos de madera para la construcción,321910
+19558,"Fabricación de cosméticos, perfumes y otras preparaciones de tocador",325620
+19560,Fabricación de otros productos de hule,326290
+19563,Fabricación de preparaciones farmacéuticas,325412
+19564,Fabricación de productos abrasivos,327910
+19569,Fabricación de productos de papelería,322230
+19572,Fabricación de otros productos de plástico sin reforzamiento,326199
+19573,Fabricación de envases de cartón,322210
+19581,Fabricación de otros productos de cartón y papel,322299
+19590,Fabricación de productos a base de piedras de cantera,327991
+19591,Fabricación de productos para embalaje y envases de madera,321920
+19593,Fabricación de otros productos a base de minerales no metálicos,327999
+19594,Fabricación de aceites y grasas lubricantes,324191
+19595,Fabricación de espumas y productos de uretano,326150
+19598,Fabricación de laminados de plástico rígido,326130
+19602,Fabricación de otros productos de plástico de uso industrial sin reforzamiento,326194
+19614,Fabricación de adhesivos,325520
+19619,Fabricación de otros productos químicos,325999
+19620,"Impresión de libros, periódicos y revistas",323111
+19621,Fabricación de tubos y bloques de cemento y concreto,327330
+19626,"Fabricación de películas, placas y papel fotosensible para fotografía",325992
+19629,Fabricación de pigmentos y colorantes sintéticos,325130
+19639,Fabricación de laminados y aglutinados de madera,321210
+19641,"Fabricación de pesticidas y otros agroquímicos, excepto fertilizantes",325320
+19643,Fabricación de fertilizantes,325310
+19657,"Fabricación de jabones, limpiadores y dentífricos",325610
+19658,Fabricación de pinturas y recubrimientos,325510
+19659,Fabricación de bandas y mangueras de hule y de plástico,326220
+19661,Fabricación de artículos y utensilios de madera para el hogar,321992
+19664,Fabricación de azulejos y losetas no refractarias,327122
+19673,"Fabricación de artículos de alfarería, porcelana y loza",327111
+19684,Fabricación de otros productos de plástico con reforzamiento,326198
+19706,Fabricación de otros productos de vidrio,327219
+19715,Fabricación de muebles de baño,327112
+19735,Fabricación de espumas y productos de poliestireno,326140
+19758,Fabricación de productos preesforzados de concreto,327391
+19761,Fabricación de concreto,327320
+19766,Fabricación de fibra de vidrio,327214
+19778,Fabricación de artículos de vidrio de uso doméstico,327215
+19782,Fabricación de ladrillos no refractarios,327121
+19803,"Fabricación de productos de materiales trenzables, excepto palma",321991
+19835,Fabricación de envases y ampolletas de vidrio,327213
+19844,Fabricación de otros productos de cemento y concreto,327399
+19892,Fabricación de autopartes de plástico con y sin reforzamiento,326192
+19919,Fabricación de resinas de plásticos reciclados,325993
+19936,Fabricación de cemento y productos a base de cemento en plantas integradas,327310
+19963,Fabricación de productos de madera de uso industrial,321993
+19966,Fabricación de bolsas de papel y productos celulósicos recubiertos y tratados,322220
+20001,Fabricación de papel a partir de pulpa,322122
+20024,Fabricación de cartón en plantas integradas,322131
+20032,Fabricación de espejos,327212
+20120,Fabricación de llantas y cámaras,326211
+20126,Fabricación de otros productos químicos básicos orgánicos,325190
+20129,Fabricación de resinas sintéticas,325211
+20865,Fabricación de cartón y cartoncillo a partir de pulpa,322132
+20921,Fabricación de materias primas para la industria farmacéutica,325411
+21121,"Fabricación de tubería y conexiones, y tubos para embalaje",326120
+21183,Fabricación de tintas para impresión,325910
+21462,Fabricación de yeso y productos de yeso,327420
+21846,Revitalización de llantas,326212
+22022,Fabricación de pañales desechables y productos sanitarios,322291
+22115,Fabricación de papel en plantas integradas,322121
+22271,Refinación de petróleo,324110
+22444,Fabricación de productos de asfalto,324120
+24538,Aserraderos integrados,321111
+24848,Aserrado de tablas y tablones,321112
+24969,Fabricación de hules sintéticos,325212
+25326,Fabricación de petroquímicos básicos del gas natural y del petróleo refinado,325110
+25351,Fabricación de explosivos,325920
+25407,Fabricación de productos refractarios,327123
+25815,Fabricación de fibras químicas,325220
+25818,Fabricación de artículos de vidrio de uso industrial y comercial,327216
+25956,Fabricación de gases industriales,325120
+27293,Fabricación de artículos oftálmicos,339113
+27294,Otras industrias manufactureras,339999
+27295,Fabricación de artículos deportivos,339920
+27296,Fabricación de productos eléctricos de carbón y grafito,335991
+27298,Fabricación de motocicletas,336991
+27299,Fabricación de equipo y aparatos de distribución de energía eléctrica,335312
+27300,"Fabricación de muebles, excepto cocinas integrales, muebles modulares de baño y muebles de oficina y estantería",337120
+27301,Fabricación de otros productos metálicos,332999
+27303,Fabricación de productos de herrería,332320
+27304,Maquinado de piezas metálicas para maquinaria y equipo en general,332710
+27307,Fabricación de muebles de oficina y estantería,337210
+27309,Recubrimientos y terminados metálicos,332810
+27316,Fabricación de persianas y cortineros,337920
+27322,Fabricación de herrajes y cerraduras,332510
+27323,Fabricación de otras partes para vehículos automotrices,336390
+27324,Fabricación de juguetes,339930
+27325,"Fabricación de alambre, productos de alambre y resortes",332610
+27326,Fabricación de lámparas ornamentales,335120
+27327,Fabricación de material desechable de uso médico,339112
+27328,Fabricación de estructuras metálicas,332310
+27329,Fabricación de carrocerías y remolques,336210
+27330,Fabricación de otra maquinaria y equipo para la industria en general,333999
+27331,Fabricación de otros productos de hierro y acero,331220
+27335,Fabricación de envases metálicos de calibre ligero,332430
+27339,Fabricación de maquinaria y equipo para la industria metalmecánica,333510
+27341,Fabricación de productos metálicos forjados y troquelados,332110
+27345,Fabricación de piezas metálicas troqueladas para vehículos automotrices,336370
+27351,"Fabricación de tornillos, tuercas, remaches y similares",332720
+27353,Fabricación de colchones,337910
+27356,Fabricación de equipo de audio y de video,334310
+27359,Fabricación de herramientas de mano metálicas sin motor,332211
+27360,Fabricación de válvulas metálicas,332910
+27361,Orfebrería y joyería de metales y piedras preciosos,339912
+27362,Fabricación de anuncios y señalamientos,339950
+27372,Fabricación de maquinaria y equipo para la industria alimentaria y de las bebidas,333243
+27375,Fabricación de equipo de aire acondicionado y calefacción,333411
+27387,Fabricación de otra maquinaria y equipo para el comercio y los servicios,333319
+27390,Fabricación de partes de sistemas de dirección y de suspensión para vehículos automotrices,336330
+27391,Moldeo por fundición de piezas metálicas no ferrosas,331520
+27394,"Fabricación de otros instrumentos de medición, control, navegación, y equipo médico electrónico",334519
+27396,"Fabricación de artículos y accesorios para escritura, pintura, dibujo y actividades de oficina",339940
+27407,"Fabricación de enchufes, contactos, fusibles y otros accesorios para instalaciones eléctricas",335930
+27408,Fabricación de bicicletas y triciclos,336992
+27409,Fabricación de motores de gasolina y sus partes para vehículos automotrices,336310
+27411,Metalistería de metales no preciosos,339914
+27417,Complejos siderúrgicos,331111
+27421,Industria básica del aluminio,331310
+27470,Fabricación de utensilios de cocina metálicos,332212
+27612,Joyería de metales y piedras no preciosos y de otros materiales,339913
+27617,"Fabricación de equipo de transmisión y recepción de señales de radio y televisión, y equipo de comunicación inalámbrico",334220
+27640,"Fabricación de equipo no electrónico para uso médico, dental y para laboratorio",339111
+27645,"Fabricación de escobas, cepillos y similares",339993
+27646,Fabricación de enseres electrodomésticos menores,335210
+27647,Fabricación de bombas y sistemas de bombeo,333910
+27663,Fabricación de cocinas integrales y muebles modulares de baño,337110
+27683,Fabricación de maquinaria y equipo para la industria de la impresión,333245
+27749,Fabricación de velas y veladoras,339994
+27789,Fabricación de asientos y accesorios interiores para vehículos automotores,336360
+27798,Fabricación de computadoras y equipo periférico,334110
+27800,Fabricación de ataúdes,339995
+27803,Fabricación de maquinaria y equipo para levantar y trasladar,333920
+27808,Fabricación de equipo eléctrico y electrónico y sus partes para vehículos automotores,336320
+27809,Fabricación de partes de sistemas de frenos para vehículos automotrices,336340
+27815,Fabricación de otros equipos de comunicación,334290
+27818,Fabricación de maquinaria y equipo para otras industrias manufactureras,333249
+27831,Fabricación de otros productos eléctricos,335999
+27837,Fabricación de focos,335110
+27841,Acuñación e impresión de monedas,339911
+27847,Fabricación de aparatos e instrumentos para pesar,333993
+27855,Fabricación de cables de conducción eléctrica,335920
+27859,Fabricación de maquinaria y equipo para la industria del hule y del plástico,333242
+27906,Fabricación de tubos y postes de hierro y acero,331210
+27937,Fabricación de equipo de refrigeración industrial y comercial,333412
+27952,Fabricación de equipo ferroviario,336510
+27955,Fabricación y reproducción de medios magnéticos y ópticos,334610
+27958,"Fabricación de cierres, botones y agujas",339992
+27967,Fabricación de instrumentos musicales,339991
+27979,Fabricación de calderas industriales,332410
+27981,Fabricación de aparatos de línea blanca,335220
+29180,Fabricación de automóviles y camionetas,336110
+29205,Fabricación de baleros y rodamientos,332991
+29218,Fabricación de componentes electrónicos,334410
+29236,Laminación secundaria de cobre,331420
+29278,Fabricación de maquinaria y equipo para envasar y empacar,333992
+29287,Fundición y refinación de otros metales no ferrosos,331419
+29327,Fabricación de equipo telefónico,334210
+29347,Fabricación de embarcaciones,336610
+29356,Fabricación de tanques metálicos de calibre grueso,332420
+29495,Fabricación de relojes,334511
+29552,Fabricación de camiones y tractocamiones,336120
+29580,Fabricación de maquinaria y equipo para la industria extractiva,333130
+29699,Moldeo por fundición de piezas de hierro y acero,331510
+29719,Fabricación de partes de sistemas de transmisión para vehículos automotores,336350
+29859,"Fabricación de motores de combustión interna, turbinas y transmisiones",333610
+30106,Fabricación de equipo para soldar y soldaduras,333991
+30210,Fabricación de maquinaria y equipo para la industria textil,333244
+31590,Fabricación de otro equipo de transporte,336999
+32522,Fabricación de maquinaria y equipo pecuario,333112
+32534,Fabricación de maquinaria y equipo agrícola,333111
+32743,Fundición y refinación de metales preciosos,331412
+32982,Laminación secundaria de otros metales no ferrosos,331490
+33125,Fabricación de maquinaria y equipo para la construcción,333120
+33554,Fabricación de motores y generadores eléctricos,335311
+34553,Fabricación de maquinaria y equipo para la industria de la madera,333241
+34694,Fabricación de maquinaria y equipo para la industria del vidrio y otros minerales no metálicos,333246
+36452,Comercio al por mayor de electrodomésticos menores y aparatos de línea blanca,433510
+36453,Comercio al por mayor de equipo y material eléctrico,434225
+36454,Comercio al por mayor de pan y pasteles,431191
+36458,Comercio al por mayor de otras materias primas para otras industrias,434229
+36463,Comercio al por mayor de artículos de papelería,433410
+36464,Comercio al por mayor de mobiliario y equipo de oficina,435412
+36465,Comercio al por mayor de abarrotes,431110
+36466,Comercio al por mayor de otra maquinaria y equipo de uso general,435419
+36471,Comercio al por mayor de frutas y verduras frescas,431130
+36472,Comercio al por mayor de desechos de papel y de cartón,434312
+36478,Comercio al por mayor de madera para la construcción y la industria,434224
+36480,Comercio al por mayor de artículos de joyería y relojes,433220
+36481,"Comercio al por mayor de partes y refacciones nuevas para automóviles, camionetas y camiones",436112
+36483,Comercio al por mayor de materiales metálicos para la construcción y la manufactura,434221
+36484,Comercio al por mayor de juguetes y bicicletas,433312
+36485,Comercio al por mayor de artículos y accesorios para diseño y pintura artística,435312
+36492,Comercio al por mayor de maquinaria y equipo para la industria manufacturera,435220
+36493,Comercio al por mayor de productos farmacéuticos,433110
+36496,"Comercio al por mayor de semillas y granos alimenticios, especias y chiles secos",431150
+36513,Comercio al por mayor de maquinaria y equipo para otros servicios y para actividades comerciales,435319
+36532,"Comercio al por mayor de mobiliario, equipo, y accesorios de cómputo",435411
+36536,"Comercio al por mayor de maquinaria y equipo agropecuario, forestal y para la pesca",435110
+36538,Comercio al por mayor de carnes rojas,431121
+36541,Comercio al por mayor de otros productos textiles,432119
+36543,"Comercio al por mayor de mobiliario, equipo e instrumental médico y de laboratorio",435313
+36544,Comercio al por mayor de libros,433420
+36545,"Comercio al por mayor de otros materiales para la construcción, excepto de madera y metálicos",434219
+36546,"Comercio al por mayor de cemento, tabique y grava",434211
+36548,Comercio al por mayor de carne de aves,431122
+36552,Comercio al por mayor de vidrios y espejos,434227
+36556,Comercio al por mayor de artículos desechables,434240
+36571,Comercio al por mayor de desechos metálicos,434311
+36578,"Comercio al por mayor de cigarros, puros y tabaco",431220
+36584,"Comercio al por mayor de envases en general, papel y cartón para la industria",434223
+36586,"Comercio al por mayor de equipo de telecomunicaciones, fotografía y cinematografía",435311
+36596,Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial,434222
+36601,Comercio al por mayor de vinos y licores,431212
+36602,"Comercio al por mayor de ropa, bisutería y accesorios de vestir",432120
+36605,Comercio al por mayor de maquinaria y equipo para la construcción y la minería,435210
+36609,Comercio al por mayor de pintura,434226
+36629,Comercio al por mayor de artículos y aparatos deportivos,433313
+36643,Comercio al por mayor de camiones,436111
+36654,Comercio al por mayor de combustibles de uso industrial,434230
+36735,"Comercio al por mayor de fibras, hilos y telas",432111
+36751,"Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",434112
+36756,"Intermediación de comercio al por mayor de productos agropecuarios, excepto a través de Internet y de otros medios electrónicos",437111
+36769,Comercio al por mayor de conservas alimenticias,431193
+36792,Comercio al por mayor de artículos de perfumería y cosméticos,433210
+36795,Comercio al por mayor de botanas y frituras,431192
+36798,Comercio al por mayor de cueros y pieles,432113
+36806,"Comercio al por mayor de fertilizantes, plaguicidas y semillas para siembra",434111
+36817,Comercio al por mayor de dulces y materias primas para repostería,431180
+36834,Comercio al por mayor de bebidas no alcohólicas y hielo,431211
+36870,Intermediación de comercio al por mayor exclusivamente a través de Internet y otros medios electrónicos,437210
+36876,Comercio al por mayor de desechos de plástico,434314
+36877,Comercio al por mayor de otros materiales de desecho,434319
+36887,Comercio al por mayor de calzado,432130
+36924,Comercio al por mayor de otros alimentos,431199
+36930,Comercio al por mayor de leche y otros productos lácteos,431160
+37073,"Intermediación de comercio al por mayor para productos de uso doméstico y personal, excepto a través de Internet y de otros medios electrónicos",437113
+37165,"Intermediación de comercio al por mayor de productos para la industria, el comercio y los servicios, excepto a través de Internet y de otros medios electrónicos",437112
+37186,Comercio al por mayor de revistas y periódicos,433430
+37326,Comercio al por mayor de pescados y mariscos,431123
+37370,Comercio al por mayor de ganado y aves en pie,434228
+37375,Comercio al por mayor de huevo,431140
+37611,Comercio al por mayor de cerveza,431213
+37723,Comercio al por mayor de blancos,432112
+38100,Comercio al por mayor de desechos de vidrio,434313
+38236,Comercio al por mayor de embutidos,431170
+38918,Comercio al por mayor de discos y casetes,433311
+49014,Comercio al por mayor de miel,431194
+54007,Comercio al por menor de lentes,464121
+54008,Comercio al por menor de artículos de papelería,465311
+54009,"Comercio al por menor de mobiliario, equipo y accesorios de cómputo",466211
+54012,Comercio al por menor de teléfonos y otros aparatos de comunicación,466212
+54014,Comercio al por menor de mascotas,465911
+54032,Comercio al por menor de artículos para la limpieza,467115
+54041,Comercio al por menor en tiendas departamentales,462210
+54050,Comercio al por menor en minisupers,462112
+54052,Farmacias sin minisúper,464111
+54054,"Comercio al por menor de ropa, excepto de bebé y lencería",463211
+54058,Comercio al por menor de artículos y aparatos deportivos,465215
+54060,Comercio al por menor de lencería,463213
+54061,Comercio al por menor de electrodomésticos menores y aparatos de línea blanca,466112
+54062,Comercio al por menor de muebles para el hogar,466111
+54064,"Comercio al por menor de productos naturistas, medicamentos homeopáticos y de complementos alimenticios",464113
+54065,Comercio al por menor de artículos de joyería y relojes,465112
+54066,"Comercio al por menor en tiendas de abarrotes, ultramarinos y misceláneas",461110
+54068,Comercio al por menor de otros alimentos,461190
+54074,Comercio al por menor de ropa de bebé,463212
+54075,Comercio al por menor de juguetes,465212
+54079,Comercio al por menor de vinos y licores,461211
+54095,Comercio al por menor de carnes rojas,461121
+54110,Comercio al por menor de telas,463111
+54126,"Comercio al por menor de leche, otros productos lácteos y embutidos",461150
+54196,Comercio al por menor de calzado,463310
+54231,Comercio al por menor en ferreterías y tlapalerías,467111
+54232,Comercio al por menor de otros artículos para la decoración de interiores,466319
+54296,Comercio al por menor de bisutería y accesorios de vestir,463215
+54298,Comercio al por menor de artículos de mercería y bonetería,463113
+54314,Comercio al por menor de dulces y materias primas para repostería,461160
+54341,Comercio al por menor de pintura,467113
+54350,Comercio al por menor de gasolina y diesel,468411
+54353,Comercio al por menor en tiendas de artesanías,465915
+54361,"Comercio al por menor de partes y refacciones nuevas para automóviles, camionetas y camiones",468211
+54586,Comercio al por menor de frutas y verduras frescas,461130
+54613,Comercio al por menor de bicicletas,465213
+54616,Comercio al por menor en supermercados,462111
+54633,Comercio al por menor de revistas y periódicos,465313
+54665,"Comercio al por menor de cristalería, loza y utensilios de cocina",466114
+55053,Comercio al por menor de otros artículos de uso personal,465919
+55055,Comercio al por menor de artículos de perfumería y cosméticos,465111
+55129,Comercio al por menor de regalos,465912
+55132,Comercio al por menor de blancos,463112
+55134,"Comercio al por menor de llantas y cámaras para automóviles, camionetas y camiones",468213
+55138,Farmacias con minisúper,464112
+55140,Comercio al por menor de lámparas ornamentales y candiles,466314
+55141,Comercio al por menor de libros,465312
+55147,Comercio al por menor de ropa de cuero y piel y de otros artículos de estos materiales,463216
+55165,"Comercio al por menor de partes y refacciones usadas para automóviles, camionetas y camiones",468212
+55166,Comercio al por menor de automóviles y camionetas nuevos,468111
+55169,"Comercio al por menor de alfombras, cortinas, tapices y similares",466311
+55174,Comercio al por menor de cerveza,461212
+55201,Comercio al por menor de carne de aves,461122
+55220,Comercio al por menor de artículos usados,466410
+55735,Comercio al por menor de bebidas no alcohólicas y hielo,461213
+57246,"Comercio al por menor de semillas y granos alimenticios, especias y chiles secos",461140
+64402,Comercio al por menor de artículos desechables,465914
+66327,Comercio al por menor de vidrios y espejos,467114
+72855,Comercio al por menor de pisos y recubrimientos cerámicos,467112
+72893,Comercio al por menor de motocicletas,468311
+72955,Comercio al por menor de instrumentos musicales,465216
+73012,Comercio al por menor de paletas de hielo y helados,461170
+73101,"Comercio al por menor de disfraces, vestimenta regional y vestidos de novia",463214
+73122,Comercio al por menor de otros vehículos de motor,468319
+73315,Comercio al por menor de pañales desechables,463217
+73520,Comercio al por menor de plantas y flores naturales,466312
+73521,"Comercio al por menor de cigarros, puros y tabaco",461220
+73606,"Comercio al por menor de aceites y grasas lubricantes, aditivos y similares para vehículos de motor",468420
+73626,Comercio al por menor de artículos religiosos,465913
+73825,Comercio al por menor de materiales para la construcción en tiendas de autoservicio especializadas,467116
+74508,Comercio al por menor de gas L. P. en cilindros y para tanques estacionarios,468412
+74520,Comercio al por menor de equipo y material fotográfico,465214
+74545,Comercio al por menor de sombreros,463218
+74611,Comercio al por menor de automóviles y camionetas usados,468112
+74715,Comercio al por menor de artículos para albercas y otros artículos,467117
+74754,Comercio al por menor de artículos ortopédicos,464122
+75290,Comercio al por menor de pescados y mariscos,461123
+75439,Comercio al por menor de discos y casetes,465211
+75678,"Comercio al por menor exclusivamente a través de Internet, y catálogos impresos, televisión y similares",469110
+75932,Comercio al por menor de antigüedades y obras de arte,466313
+76473,Comercio al por menor de muebles para jardín,466113
+78156,Comercio al por menor de otros combustibles,468419
+88240,Comercio al por menor de gas L. P. en estaciones de carburación,468413
+261600,Otros servicios relacionados con el transporte,488990
+261601,Servicios de mudanzas,484210
+261602,Otros servicios de intermediación para el transporte de carga,488519
+261603,Servicios de agencias aduanales,488511
+261606,Servicios de grúa,488410
+261607,Otro autotransporte foráneo de carga general,484129
+261612,Alquiler de autobuses con chofer,485510
+261615,Transporte aéreo no regular,481210
+261617,Transporte aéreo regular en líneas aéreas nacionales,481111
+261618,Servicios de administración de centrales camioneras,488491
+261622,"Servicios de administración de carreteras, puentes y servicios auxiliares",488492
+261623,Autotransporte foráneo de materiales y residuos peligrosos,484232
+261624,Transporte colectivo foráneo de pasajeros de ruta fija,485210
+261628,Transporte escolar y de personal,485410
+261634,Otros servicios relacionados con el transporte aéreo,488190
+261657,Administración de aeropuertos y helipuertos,488112
+261660,Transporte aéreo regular en líneas aéreas extranjeras,481112
+261664,Transporte turístico por tierra,487110
+261731,Transporte colectivo urbano y suburbano de pasajeros en autobuses de ruta fija,485111
+261742,Otro autotransporte local de carga general,484119
+261747,Otro autotransporte foráneo de carga especializado,484239
+261750,Autotransporte foráneo con refrigeración,484233
+261758,Servicios relacionados con el transporte por ferrocarril,488210
+261764,Otro autotransporte local de carga especializado,484229
+261798,Servicios de báscula para el transporte y otros servicios relacionados con el transporte por carretera,488493
+261803,Otros servicios relacionados con el transporte por agua,488390
+261829,Autotransporte local de materiales y residuos peligrosos,484222
+261957,Autotransporte foráneo de productos agrícolas sin refrigeración,484121
+261983,Autotransporte foráneo de materiales para la construcción,484231
+262062,Transporte colectivo urbano y suburbano de pasajeros en metro,485114
+262063,Transporte colectivo urbano y suburbano de pasajeros en trolebuses y trenes ligeros,485113
+262067,Otro transporte terrestre de pasajeros,485990
+262080,Alquiler de automóviles con chofer,485320
+262089,Autotransporte local con refrigeración,484223
+262117,Administración de puertos y muelles,488310
+262171,Servicios para la navegación por agua,488330
+262220,Transporte turístico por agua,487210
+262290,Servicios a la navegación aérea,488111
+262323,Transporte de gas natural por ductos,486210
+262428,Transporte por ferrocarril,482110
+262451,Autotransporte local de materiales para la construcción,484221
+262502,"Transporte marítimo de altura, excepto de petróleo y gas natural",483111
+263030,"Transporte marítimo de cabotaje, excepto de petróleo y gas natural",483112
+263776,Autotransporte local de productos agrícolas sin refrigeración,484111
+264187,Otros servicios de almacenamiento con instalaciones especializadas,493190
+264188,Servicios de mensajería y paquetería foránea,492110
+264189,Otros servicios de almacenamiento general sin instalaciones especializadas,493119
+264190,Almacenes generales de depósito,493111
+264192,Servicios postales,491110
+264240,Almacenamiento de productos agrícolas que no requieren refrigeración,493130
+264246,Almacenamiento con refrigeración,493120
+264274,Servicios de mensajería y paquetería local,492210
+264942,"Producción de videoclips, comerciales y otros materiales audiovisuales",512113
+264943,"Procesamiento electrónico de información, hospedaje y otros servicios relacionados",518210
+264945,Otros servicios de telecomunicaciones,517910
+264946,Agencias noticiosas,519110
+264947,Producción de películas,512111
+264948,Edición de revistas y otras publicaciones periódicas integrada con la impresión,511122
+264949,Transmisión de programas de radio,515110
+264950,Edición de libros integrada con la impresión,511132
+264955,Edición de libros,511131
+264957,Edición de revistas y otras publicaciones periódicas,511121
+264960,Servicios de postproducción y otros servicios para la industria fílmica y del video,512190
+264962,Edición de software y edición de software integrada con la reproducción,511210
+264963,Operadores de servicios de telecomunicaciones alámbricas,517110
+264964,Grabación de discos compactos (CD) y de video digital (DVD) o casetes musicales,512240
+264965,Edición de periódicos integrada con la impresión,511112
+264975,Edición y difusión de contenido exclusivamente a través de Internet y servicios de búsqueda en la red,519130
+264982,Edición de otros materiales,511191
+264984,Operadores de servicios de telecomunicaciones inalámbricas,517210
+264996,Edición de periódicos,511111
+264999,Bibliotecas y archivos del sector privado,519121
+265003,Bibliotecas y archivos del sector público,519122
+265015,Producción de material discográfico integrada con su reproducción y distribución,512220
+265077,Transmisión de programas de televisión,515120
+265081,Productoras discográficas,512210
+265082,Otros servicios de suministro de información,519190
+265098,Producción de programas para la televisión,512112
+265102,Otros servicios de grabación del sonido,512290
+265108,Editoras de música,512230
+265358,Edición de otros materiales integrada con la impresión,511192
+265376,Operadores de servicios de telecomunicaciones vía satélite,517410
+265384,Exhibición de películas y otros materiales audiovisuales,512130
+265454,Distribución de películas y de otros materiales audiovisuales,512120
+265689,Edición de directorios y de listas de correo,511141
+265911,Producción de programación de canales para sistemas de televisión por cable o satelitales,515210
+266984,Banca múltiple,522110
+266985,"Agentes, ajustadores y gestores de seguros y fianzas",524210
+266988,Compañías de seguros,524110
+266990,Fondos de aseguramiento campesino,524120
+266991,Otras instituciones de intermediación crediticia y financiera no bursátil,522490
+266992,Centros cambiarios,523122
+266995,Casas de bolsa,523110
+266996,Cajas de ahorro popular,522320
+267007,Compañías afianzadoras,524130
+267015,Asesoría en inversiones,523910
+267019,Otros servicios relacionados con la intermediación bursátil,523990
+267029,Servicios relacionados con la intermediación crediticia no bursátil,522510
+267051,Administración de cajas de pensión y de seguros independientes,524220
+267178,Sociedades financieras de objeto múltiple,522460
+267193,Compañías de autofinanciamiento,522440
+267210,Banca de desarrollo,522210
+267211,Sociedades financieras de objeto limitado,522430
+267237,Casas de empeño,522452
+267239,Otras instituciones de ahorro y préstamo,522390
+267285,Uniones de crédito,522310
+267334,Bolsa de valores,523210
+267393,Casas de cambio,523121
+267655,Banca central,521110
+273277,Montepíos,522451
+273583,Arrendadoras financieras,522410
+273940,Fondos y fideicomisos financieros,522220
+274639,Compañías de factoraje financiero,522420
+275637,Servicios de administración de bienes raíces,531311
+275638,Inmobiliarias y corredores de bienes raíces,531210
+275641,Alquiler sin intermediación de salones para fiestas y convenciones,531113
+275642,Alquiler de maquinaria y equipo comercial y de servicios,532493
+275646,Alquiler de automóviles sin chofer,532110
+275649,"Alquiler de mesas, sillas, vajillas y similares",532291
+275654,Centros generales de alquiler,532310
+275663,Alquiler sin intermediación de otros bienes raíces,531119
+275668,Alquiler sin intermediación de oficinas y locales comerciales,531114
+275752,Otros servicios relacionados con los servicios inmobiliarios,531319
+275864,"Alquiler de maquinaria y equipo para construcción, minería y actividades forestales",532411
+275901,Alquiler de otros artículos para el hogar y personales,532299
+275922,"Alquiler de maquinaria y equipo para mover, levantar y acomodar materiales",532492
+276006,Alquiler de prendas de vestir,532220
+276523,Alquiler sin intermediación de viviendas no amuebladas,531112
+276540,Alquiler sin intermediación de edificios industriales dentro de un parque industrial,531116
+276643,Alquiler de aparatos eléctricos y electrónicos para el hogar y personales,532210
+276644,"Alquiler sin intermediación de teatros, estadios, auditorios y similares",531115
+276645,Alquiler de camiones de carga sin chofer,532121
+276668,"Alquiler de equipo de transporte, excepto terrestre",532412
+276732,"Alquiler de autobuses, minibuses y remolques sin chofer",532122
+276783,Alquiler sin intermediación de viviendas amuebladas,531111
+276883,Alquiler de equipo de cómputo y de otras máquinas y mobiliario de oficina,532420
+277142,Alquiler de videocasetes y discos,532230
+277177,"Servicios de alquiler de marcas registradas, patentes y franquicias",533110
+278980,"Alquiler de maquinaria y equipo agropecuario, pesquero y para la industria manufacturera",532491
+280951,Alquiler de instrumentos musicales,532292
+281455,Servicios de rotulación y otros servicios de publicidad,541890
+281456,Servicios de diseño de sistemas de cómputo y servicios relacionados,541510
+281457,Servicios de contabilidad y auditoría,541211
+281459,Agencias de publicidad,541810
+281460,Diseño gráfico,541430
+281463,Servicios de consultoría en administración,541610
+281464,Servicios de ingeniería,541330
+281466,Servicios de fotografía y videograbación,541920
+281469,Servicios de dibujo,541340
+281471,Diseño industrial,541420
+281472,"Otros servicios profesionales, científicos y técnicos",541990
+281480,Bufetes jurídicos,541110
+281483,Servicios de arquitectura,541310
+281490,Agencias de anuncios publicitarios,541850
+281497,Servicios de apoyo para efectuar trámites legales,541190
+281500,Agencias de relaciones públicas,541820
+281506,Servicios de consultoría en medio ambiente,541620
+281510,Servicios veterinarios para mascotas prestados por el sector privado,541941
+281518,Servicios de investigación de mercados y encuestas de opinión pública,541910
+281572,Diseño y decoración de interiores,541410
+281576,"Servicios de investigación científica y desarrollo en ciencias sociales y humanidades, prestados por el sector privado",541721
+281577,"Servicios de investigación científica y desarrollo en ciencias naturales y exactas, ingeniería, y ciencias de la vida, prestados por el sector privado",541711
+281589,Laboratorios de pruebas,541380
+281606,Otros servicios de consultoría científica y técnica,541690
+281631,Diseño de modas y otros diseños especializados,541490
+281668,Otros servicios relacionados con la contabilidad,541219
+281737,Servicios de elaboración de mapas,541370
+281781,Agencias de representación de medios,541840
+281797,Agencias de compra de medios a petición del cliente,541830
+281834,Servicios veterinarios para la ganadería prestados por el sector privado,541943
+281914,Servicios de inspección de edificios,541350
+281932,Servicios de levantamiento geofísico,541360
+281982,Servicios de arquitectura de paisaje y urbanismo,541320
+282019,Servicios de traducción e interpretación,541930
+282129,Notarías públicas,541120
+282912,Distribución de material publicitario,541870
+283783,Servicios veterinarios para mascotas prestados por el sector público,541942
+283806,"Servicios de investigación científica y desarrollo en ciencias sociales y humanidades, prestados por el sector público",541722
+285052,"Servicios de investigación científica y desarrollo en ciencias naturales y exactas, ingeniería, y ciencias de la vida, prestados por el sector público",541712
+296527,Corporativos,551111
+296529,Tenedoras de acciones,551112
+296705,Servicios de acceso a computadoras,561432
+296713,Suministro de personal permanente,561330
+296714,Agencias de cobranza,561440
+296717,Organizadores de convenciones y ferias comerciales e industriales,561920
+296718,Servicios de administración de negocios,561110
+296719,Agencias de colocación,561310
+296720,Otros servicios de apoyo a los negocios,561990
+296722,Servicios de protección y custodia mediante el monitoreo de sistemas de seguridad,561620
+296724,Organización de excursiones y paquetes turísticos para agencias de viajes,561520
+296726,Agencias de viajes,561510
+296737,"Servicios de investigación y de protección y custodia, excepto mediante monitoreo",561610
+296755,Servicios combinados de apoyo en instalaciones,561210
+296772,Agencias de empleo temporal,561320
+296806,Servicios de instalación y mantenimiento de áreas verdes,561730
+296871,Servicios de limpieza de inmuebles,561720
+296874,Servicios de preparación de documentos,561410
+296881,Otros servicios de reservaciones,561590
+296897,Servicios de recepción de llamadas telefónicas y promoción por teléfono,561422
+297104,"Servicios de fotocopiado, fax y afines",561431
+297147,Servicios de control y exterminación de plagas,561710
+297148,Servicios de casetas telefónicas,561421
+297170,Manejo de desechos no peligrosos y servicios de remediación a zonas dañadas por desechos no peligrosos,562112
+297174,Despachos de investigación de solvencia financiera,561450
+297211,Otros servicios de limpieza,561790
+297227,Manejo de residuos peligrosos y servicios de remediación a zonas dañadas por materiales o residuos peligrosos,562111
+297231,Servicios de empacado y etiquetado,561910
+298491,"Servicios de limpieza de tapicería, alfombras y muebles",561740
+300921,Otros servicios de apoyo secretarial y similares,561490
+307694,Escuelas de idiomas del sector privado,611631
+307695,Escuelas de computación del sector privado,611421
+307698,Escuelas de educación preescolar del sector privado,611111
+307699,Escuelas de deporte del sector privado,611621
+307700,Otros servicios educativos proporcionados por el sector privado,611698
+307703,Escuelas del sector privado dedicadas a la enseñanza de oficios,611511
+307704,Escuelas de arte del sector privado,611611
+307806,Escuelas de arte del sector público,611612
+307821,Servicios de profesores particulares,611691
+307844,Escuelas de educación superior del sector público,611312
+307856,Escuelas del sector privado que combinan diversos niveles de educación,611171
+307865,Escuelas de educación superior del sector privado,611311
+307884,Escuelas de deporte del sector público,611622
+307898,Escuelas de educación primaria del sector público,611122
+307914,Servicios de apoyo a la educación,611710
+307918,Escuelas de educación técnica superior del sector privado,611211
+307934,Escuelas de educación primaria del sector privado,611121
+307950,Escuelas de educación media superior del sector privado,611161
+307953,Escuelas de educación preescolar del sector público,611112
+307964,Escuelas para la capacitación de ejecutivos del sector privado,611431
+307978,Escuelas del sector privado de educación para necesidades especiales,611181
+307998,Escuelas de idiomas del sector público,611632
+308094,Escuelas del sector público que combinan diversos niveles de educación,611172
+308097,Escuelas de computación del sector público,611422
+308110,Escuelas comerciales y secretariales del sector privado,611411
+308130,Escuelas de educación media superior del sector público,611162
+308136,Escuelas de educación media técnica terminal del sector privado,611151
+308152,Escuelas de educación secundaria general del sector público,611132
+308219,Escuelas del sector público dedicadas a la enseñanza de oficios,611512
+308222,Escuelas del sector público de educación para necesidades especiales,611182
+308251,Otros servicios educativos proporcionados por el sector público,611699
+308633,Escuelas de educación secundaria general del sector privado,611131
+309687,Escuelas de educación secundaria técnica del sector público,611142
+310007,Escuelas de educación secundaria técnica del sector privado,611141
+311400,Escuelas para la capacitación de ejecutivos del sector público,611432
+311517,Escuelas de educación técnica superior del sector público,611212
+314865,Escuelas de educación media técnica terminal del sector público,611152
+319599,Agrupaciones de autoayuda para alcohólicos y personas con otras adicciones,624191
+319602,Consultorios dentales del sector privado,621211
+319603,Consultorios de medicina especializada del sector privado,621113
+319605,Clínicas de consultorios médicos del sector privado,621115
+319606,"Consultorios del sector privado de audiología y de terapia ocupacional, física y del lenguaje",621341
+319611,Consultorios de medicina general del sector privado,621111
+319617,Orfanatos y otras residencias de asistencia social del sector privado,623991
+319659,Residencias del sector privado para el cuidado de personas con problemas de trastorno mental y adicción,623221
+319715,Servicios de orientación y trabajo social para la niñez y la juventud prestados por el sector privado,624111
+319735,Guarderías del sector privado,624411
+319738,"Servicios de capacitación para el trabajo prestados por el sector privado para personas desempleadas, subempleadas o discapacitadas",624311
+319739,Laboratorios médicos y de diagnóstico del sector privado,621511
+319742,"Servicios de capacitación para el trabajo prestados por el sector público para personas desempleadas, subempleadas o discapacitadas",624312
+319745,Consultorios de nutriólogos y dietistas del sector privado,621391
+319749,Servicios de alimentación comunitarios prestados por el sector privado,624211
+319754,Centros del sector público dedicados a la atención y cuidado diurno de ancianos y discapacitados,624122
+319762,Otros consultorios del sector privado para el cuidado de la salud,621398
+319785,Consultorios de psicología del sector privado,621331
+319787,Refugios temporales comunitarios del sector privado,624221
+319835,"Residencias del sector privado con cuidados de enfermeras para enfermos convalecientes, en rehabilitación, incurables y terminales",623111
+319836,Asilos y otras residencias del sector público para el cuidado de ancianos,623312
+319837,Servicios de emergencia comunitarios prestados por el sector privado,624231
+319840,Refugios temporales comunitarios del sector público,624222
+319842,Orfanatos y otras residencias de asistencia social del sector público,623992
+319850,Asilos y otras residencias del sector privado para el cuidado de ancianos,623311
+320343,"Servicios de bancos de órganos, bancos de sangre y otros servicios auxiliares al tratamiento médico prestados por el sector privado",621991
+320344,Hospitales generales del sector privado,622111
+320348,Centros del sector privado dedicados a la atención y cuidado diurno de ancianos y discapacitados,624121
+320350,Guarderías del sector público,624412
+320366,Servicios de ambulancias,621910
+320371,Consultorios de quiropráctica del sector privado,621311
+320416,Residencias del sector privado para el cuidado de personas con problemas de retardo mental,623211
+320424,Servicios de enfermería a domicilio,621610
+320440,Clínicas de consultorios médicos del sector público,621116
+320493,Otros servicios de orientación y trabajo social prestados por el sector privado,624198
+320494,Hospitales del sector privado de otras especialidades médicas,622311
+320552,Consultorios de psicología del sector público,621332
+320560,Consultorios de optometría,621320
+320588,"Servicios de bancos de órganos, bancos de sangre y otros servicios auxiliares al tratamiento médico prestados por el sector público",621992
+320591,"Consultorios del sector público de audiología y de terapia ocupacional, física y del lenguaje",621342
+320596,Otros centros del sector privado para la atención de pacientes que no requieren hospitalización,621491
+320674,Consultorios dentales del sector público,621212
+320677,Servicios de alimentación comunitarios prestados por el sector público,624212
+320694,Consultorios de medicina general del sector público,621112
+320722,Servicios de orientación y trabajo social para la niñez y la juventud prestados por el sector público,624112
+320764,Otros servicios de orientación y trabajo social prestados por el sector público,624199
+320861,Centros del sector privado de atención médica externa para enfermos mentales y adictos,621421
+321109,Otros centros del sector público para la atención de pacientes que no requieren hospitalización,621492
+321120,Otros consultorios del sector público para el cuidado de la salud,621399
+321121,Consultorios de medicina especializada del sector público,621114
+321142,Centros del sector público de atención médica externa para enfermos mentales y adictos,621422
+321307,Residencias del sector público para el cuidado de personas con problemas de trastorno mental y adicción,623222
+321647,Hospitales generales del sector público,622112
+321706,Laboratorios médicos y de diagnóstico del sector público,621512
+322311,Servicios de emergencia comunitarios prestados por el sector público,624232
+322631,Hospitales del sector público de otras especialidades médicas,622312
+323064,Hospitales psiquiátricos y para el tratamiento por adicción del sector privado,622211
+338206,Hospitales psiquiátricos y para el tratamiento por adicción del sector público,622212
+338312,Centros de planificación familiar del sector privado,621411
+342212,Centros de acondicionamiento físico del sector privado,713943
+342213,"Agentes y representantes de artistas, deportistas y similares",711410
+342221,Otros juegos de azar,713299
+342223,Casas de juegos electrónicos,713120
+342239,"Artistas, escritores y técnicos independientes",711510
+342265,Clubes o ligas de aficionados,713992
+342287,"Promotores del sector privado de espectáculos artísticos, culturales, deportivos y similares que cuentan con instalaciones para presentarlos",711311
+342295,Otros servicios recreativos prestados por el sector privado,713998
+342298,Parques acuáticos y balnearios del sector privado,713113
+342299,Clubes deportivos del sector público,713942
+342302,Centros de acondicionamiento físico del sector público,713944
+342303,Campos de golf,713910
+342306,"Promotores del sector público de espectáculos artísticos, culturales, deportivos y similares que cuentan con instalaciones para presentarlos",711312
+342308,Parques de diversiones y temáticos del sector público,713112
+342320,Jardines botánicos y zoológicos del sector privado,712131
+342321,Otras compañías y grupos de espectáculos artísticos del sector privado,711191
+342327,"Venta de billetes de lotería, pronósticos deportivos y otros boletos de sorteo",713291
+342345,"Promotores de espectáculos artísticos, culturales, deportivos y similares que no cuentan con instalaciones para presentarlos",711320
+342354,Parques acuáticos y balnearios del sector público,713114
+342361,Museos del sector público,712112
+342369,Parques de diversiones y temáticos del sector privado,713111
+342385,Compañías de danza del sector privado,711121
+342401,Museos del sector privado,712111
+342431,Clubes deportivos del sector privado,713941
+342434,Compañías de teatro del sector privado,711111
+342435,Equipos deportivos profesionales,711212
+342438,Billares,713991
+342452,Cantantes y grupos musicales del sector privado,711131
+342455,Jardines botánicos y zoológicos del sector público,712132
+342740,Boliches,713950
+342778,Otros servicios recreativos prestados por el sector público,713999
+343255,Sitios históricos,712120
+343855,Marinas turísticas,713930
+345112,Compañías de teatro del sector público,711112
+346102,Grupos musicales del sector público,711132
+346610,"Grutas, parques naturales y otros sitios del patrimonio cultural de la nación",712190
+347962,"Restaurantes con servicio de preparación de pizzas, hamburguesas, hot dogs y pollos rostizados para llevar",722517
+347963,"Cafeterías, fuentes de sodas, neverías, refresquerías y similares",722515
+347964,Restaurantes de autoservicio,722516
+348007,Restaurantes con servicio de preparación de alimentos a la carta o de comida corrida,722511
+348012,Servicios de preparación de otros alimentos para consumo inmediato,722519
+348016,Restaurantes con servicio de preparación de tacos y tortas,722514
+348030,"Centros nocturnos, discotecas y similares",722411
+348035,Restaurantes con servicio de preparación de antojitos,722513
+348060,Restaurantes con servicio de preparación de pescados y mariscos,722512
+348062,Restaurantes que preparan otro tipo de alimentos para llevar,722518
+348094,"Bares, cantinas y similares",722412
+348114,Hoteles con otros servicios integrados,721111
+348122,Hoteles sin otros servicios integrados,721112
+348130,Servicios de comedor para empresas e instituciones,722310
+348364,Servicios de preparación de alimentos para ocasiones especiales,722320
+348395,Departamentos y casas amueblados con servicios de hotelería,721312
+351645,Pensiones y casas de huéspedes,721311
+351903,Moteles,721113
+353068,"Cabañas, villas y similares",721190
+366013,Servicios de preparación de alimentos en unidades móviles,722330
+369428,Campamentos y albergues recreativos,721210
+402578,"Asociaciones, organizaciones y cámaras de productores, comerciantes y prestadores de servicios",813110
+402579,Estacionamientos y pensiones para vehículos automotores,812410
+402580,Asociaciones y organizaciones religiosas,813210
+402581,Asociaciones y organizaciones civiles,813230
+402583,Lavado y lubricado de automóviles y camiones,811192
+402584,Salones y clínicas de belleza y peluquerías,812110
+402585,Lavanderías y tintorerías,812210
+402591,Otros servicios personales,812990
+402593,Reparación y mantenimiento de otros artículos para el hogar y personales,811499
+402597,Reparación y mantenimiento de otro equipo electrónico y de equipo de precisión,811219
+402601,Reparación y mantenimiento de equipo electrónico de uso doméstico,811211
+402606,Reparación y mantenimiento de bicicletas,811493
+402609,Reparación y mantenimiento de maquinaria y equipo industrial,811312
+402613,Reparación y mantenimiento de motocicletas,811492
+402614,Reparación mecánica en general de automóviles y camiones,811111
+402618,Reparación de tapicería de muebles para el hogar,811420
+402623,Asociaciones y organizaciones de profesionistas,813130
+402628,Otros servicios de reparación y mantenimiento de automóviles y camiones,811199
+402630,Hojalatería y pintura de automóviles y camiones,811121
+402633,Otras reparaciones mecánicas de automóviles y camiones,811119
+402634,Instalación de cristales y otras reparaciones a la carrocería de automóviles y camiones,811129
+402640,Reparación del sistema eléctrico de automóviles y camiones,811112
+402641,Reparación y mantenimiento de aparatos eléctricos para el hogar y personales,811410
+402642,Tapicería de automóviles y camiones,811122
+402658,Reparación menor de llantas,811191
+402671,Asociaciones y organizaciones laborales y sindicales,813120
+402710,Sanitarios públicos y bolerías,812130
+402754,Reparación de transmisiones de automóviles y camiones,811114
+402876,Servicios funerarios,812310
+402894,Cerrajerías,811491
+402906,Reparación de calzado y otros artículos de piel y cuero,811430
+402920,Reparación y mantenimiento de maquinaria y equipo comercial y de servicios,811314
+402959,Alineación y balanceo de automóviles y camiones,811116
+402990,Reparación de suspensiones de automóviles y camiones,811115
+403155,Servicios de revelado e impresión de fotografías,812910
+403646,Asociaciones regulatorias de actividades recreativas,813140
+403702,Administración de cementerios pertenecientes al sector privado,812321
+403900,Rectificación de partes de motor de automóviles y camiones,811113
+405652,Baños públicos,812120
+407522,"Reparación y mantenimiento de maquinaria y equipo para mover, levantar y acomodar materiales",811313
+407950,Administración de cementerios pertenecientes al sector público,812322
+408383,Reparación y mantenimiento de maquinaria y equipo agropecuario y forestal,811311
+467026,Administración pública en general,931210
+467028,Impartición de justicia y mantenimiento de la seguridad y el orden público,931410
+467039,Actividades administrativas de instituciones de bienestar social,931610
+467085,Actividades de seguridad nacional,931810
+467087,Regulación y fomento de actividades para mejorar y preservar el medio ambiente,931510
+467162,Regulación y fomento del desarrollo económico,931310
+467415,Relaciones exteriores,931710
+467454,Organismos internacionales,932110
+467483,Órganos legislativos,931110

@@ -73,8 +73,9 @@ def which_block_intersects(coordinates):
   		app.run(host='0.0.0.0')
 
   	######
+  	cdmx_actividad_y_manzanaunica = pd.read_csv('bizbyblock.csv')
+  	catalog = pd.read_csv('activity-name-catalog.csv')
 
-	cdmx_actividad_y_manzanaunica = pd.read_csv('bizbyblock.csv')
 	grouped = cdmx_actividad_y_manzanaunica.groupby(['manzana-ageb-loc-mun-edo'])
 	print(manzana)
 	sentences = []
@@ -92,9 +93,23 @@ def which_block_intersects(coordinates):
 			
 			final_grouping.append(str(current_block.iloc[j,3]))
 
+
+
 	model = Word2Vec.load("word2vec.model")
-	prediction = model.predict_output_word(final_grouping)
-	return (str(prediction))
+	code_prediction = model.predict_output_word(final_grouping)
+
+	name_and_confidence = []
+	for i in range(len(code_prediction)):
+		for j in range(len(catalog)):
+			
+			if(str(catalog['codigo_act'].loc[j]) == (str(code_prediction[i][0]))):
+				name_and_confidence.append(tuple((catalog['nombre_act'].loc[j],code_prediction[i][1])))
+
+	  #temp_list = []
+	  #temp_list.append(code_prediction[i][0])
+	  #name_and_confidence.append(tuple((catalog['nombre_act'].loc[catalog['codigo_act'].isin(temp_list)],code_prediction[i][1])))
+
+	return (str(name_and_confidence))
 
 
 	#return manzana
