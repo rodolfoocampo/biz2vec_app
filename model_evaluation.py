@@ -5,6 +5,8 @@ import pyproj as proj
 import csv
 import gensim as gensim
 import geopandas as gp
+from gensim.test.utils import common_texts, get_tmpfile
+from gensim.models import Word2Vec
 import random
 
 
@@ -70,7 +72,7 @@ for index, activity in enumerate(activity_set):
 ## Building the Context
 
 ## Instead of words, our algorithm will be fed with businesses. Especifically, types of business. Analogous to NLP word2vec, we will build the context around each business. In this case, we will use 500m, though this will be a variable that we will modify while evaluating performance. 
-cdmx_actividad_y_manzanaunica.to_csv('bizbyblock.csv')
+
 
 grouped = cdmx_actividad_y_manzanaunica.groupby(['manzana-ageb-loc-mun-edo'])
 
@@ -101,25 +103,45 @@ for i in range(len(sentences)):
   current_block = holder[1]
   for j in range(len(current_block)):
     final_grouping[i].append(str(current_block.iloc[j,2]))
-    
-# shuffle in place
+
+
 random.shuffle(final_grouping)
-
-
 
 train = final_grouping[0:int(len(final_grouping)*.8)]
 test = final_grouping[int(len(final_grouping)*.8):int(len(final_grouping))]
+
+model = Word2Vec.load("word2vec.model")
+
+correct_predictions = 0
+incorrect_predictions = 0
+for i in range(len(test)):
+	
+	missing_biz = test[i].pop(0)
+	if(len(test[i]) > 0):
+		code_prediction = model.predict_output_word(test[i])
+		testing_list = []
+		for j in range(len(code_prediction)):
+			testing_list.append(code_prediction[j][0])
+		if (missing_biz in testing_list):
+			correct_predictions = correct_predictions + 1
+		else:
+			incorrect_predictions = incorrect_predictions + 1
+
+accuracy = float(correct_predictions)/(float(correct_predictions)+float(incorrect_predictions))
+
+
+maxi = len(final_grouping[0])
+for i in range(len(final_grouping)):
+  if(maxi < len(final_grouping[i])):
+    maxi = len(final_grouping[i]) 
     
+print(maxi)
+
+print(max(len(elem) for elem in final_grouping))
+
+print(correct_predictions)
+print(incorrect_predictions)
+print(accuracy)
 
 
-model = gensim.models.Word2Vec(train, size=300,window=3000,min_count=2,workers=10, sg=0)
-model.train(train, total_examples=len(train), epochs=1000, compute_loss=True)
-
-model.save("word2vec.model")
-
-
-
-prediction = model.predict_output_word(['491110', '437112', '813210', '322210', '468111', '561310', '541490'])
-
-print(prediction)
 

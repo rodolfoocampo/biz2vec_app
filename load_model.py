@@ -97,6 +97,7 @@ def which_block_intersects(coordinates):
 
 	model = Word2Vec.load("word2vec.model")
 	code_prediction = model.predict_output_word(final_grouping)
+	most_similar = model.wv.most_similar(['491110'])
 
 	name_and_confidence = []
 	for i in range(len(code_prediction)):
@@ -109,7 +110,7 @@ def which_block_intersects(coordinates):
 	  #temp_list.append(code_prediction[i][0])
 	  #name_and_confidence.append(tuple((catalog['nombre_act'].loc[catalog['codigo_act'].isin(temp_list)],code_prediction[i][1])))
 
-	return (str(name_and_confidence))
+	return (str(name_and_confidence) + ' Most similar: ' + str(most_similar))
 
 
 	#return manzana

@@ -35,20 +35,17 @@ cdmx_points['coordinatesP'] = cdmx_points['coordinates'].apply(Point)
 cdmx_gdf = gpd.GeoDataFrame(cdmx_points, geometry='coordinatesP', crs = crs)
 
 final_grouping = []
-#for i in range(len(cdmx_gdf)):
-for i in range(3):
+for i in range(len(cdmx_gdf)):
   point = cdmx_gdf['coordinatesP'].loc[i]
-
   radius = point.buffer(0.001, resolution=100)
   radius_poly = [radius]
-   #http://www.spatialreference.org/ref/epsg/2263/
   radius_df = GeoDataFrame(crs=crs, geometry=radius_poly)
   join = gpd.sjoin(cdmx_gdf,radius_df, how="inner", op="intersects")
   join['codigo_act'] = join['codigo_act'].astype(str)
+  print(i)
   final_grouping.append(list(join['codigo_act']))
 
 
-print(final_grouping)
 
 
 ## Easily retrieve the activity name from the activity code and viceversa
