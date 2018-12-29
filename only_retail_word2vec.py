@@ -83,6 +83,17 @@ for group in grouped:
 
 
 
+def is_retail(lista):
+  retail = False
+  for x in lista:
+    if x.startswith('46'):
+      retail = True
+      return retail
+  return retail
+
+
+
+
 #We create a list of lists. Each inside list contains a sentence: a group of businesses that appear together within a block.
 # sentences contains tuples, so we grab each tuple. If we grab the second part of the tuple, we get a dataframe that contains 
 # all businesses within a given block. We iterate through that dataframe grabbing the type of business code and putting it inside 
@@ -104,19 +115,33 @@ for i in range(len(sentences)):
   for j in range(len(current_block)):
     final_grouping[i].append(str(current_block.iloc[j,2]))
     
+
+
 # shuffle in place
 random.shuffle(final_grouping)
 
+filtered = list(filter(lambda x: len(x) > 1 and is_retail(x), final_grouping))
 
+retail_only = []
+for i in range(len(filtered)):
+  retail_only.append(list(filter(lambda x: x.startswith('46'), filtered[i])))
 
+retail_only = list(filter(lambda x: len(x) > 1, retail_only))
 
-train = final_grouping[0:int(len(final_grouping)*.8)]
-test = final_grouping[int(len(final_grouping)*.8):int(len(final_grouping))]
+#function to count how many retail classes remain
+
+sett = []
+for i in range(len(retail_only)):
+  for j in range(len(retail_only[i])):
+    sett.append(retail_only[i][j])
+###############
+
+train = retail_only[0:int(len(retail_only)*.8)]
+test = retail_only[int(len(retail_only)*.8):int(len(retail_only))]
     
 
-
-model = gensim.models.Word2Vec(train, size=300,window=200,min_count=2,workers=10, sg=0)
-model.train(train, total_examples=len(train), epochs=3000, compute_loss=True)
+model = gensim.models.Word2Vec(train, size=200,window=200,min_count=2,workers=10, sg=0)
+model.train(train, total_examples=len(train), epochs=200, compute_loss=True)
 
 model.save("word2vec.model")
 
@@ -130,7 +155,7 @@ for i in range(len(test)):
     testing_list = []
     for j in range(len(code_prediction)):
       testing_list.append(code_prediction[j][0])
-    if (missing_biz in testing_list[0]):
+    if (missing_biz in testing_list):
       correct_predictions = correct_predictions + 1
     else:
       incorrect_predictions = incorrect_predictions + 1

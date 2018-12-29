@@ -44,3 +44,22 @@ geo_df = GeoDataFrame(crs=crs, geometry=point_g)
 join = gpd.sjoin(geo_df, blocks_poly, how="inner", op="within")
 
 nearest_geoms = nearest_points(geo_df, blocks_poly)
+
+
+cdmx_actividad_y_manzanaunica = pd.read_csv('bizbyblock.csv')
+	grouped = cdmx_actividad_y_manzanaunica.groupby(['manzana-ageb-loc-mun-edo'])
+
+	sentences = []
+	for group in grouped:
+	  sentences.append(group)
+
+	final_grouping = []
+	for i in range(len(sentences)):
+	  final_grouping.append([])
+	  holder = sentences[i]
+	  current_block = holder[1]
+	  if (holder[0] == manzana):
+		  for j in range(len(current_block)):
+		    final_grouping[i].append(str(current_block.iloc[j,2]))
+
+	return final_grouping

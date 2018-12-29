@@ -7,7 +7,13 @@ import gensim as gensim
 import geopandas as gp
 import random
 from sklearn.preprocessing import MultiLabelBinarizer
-
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.neural_network import MLPClassifier
+from sklearn.metrics import confusion_matrix
+from sklearn.externals import joblib
+from random import randint
 
 
 
@@ -103,45 +109,62 @@ for i in range(len(sentences)):
   current_block = holder[1]
   for j in range(len(current_block)):
     final_grouping[i].append(str(current_block.iloc[j,2]))
-    
+ 
+
 # shuffle in place
 random.shuffle(final_grouping)
+larger_than_zero = list(filter(lambda x: len(x) > 1, final_grouping))
+
+larger_one_hot = MultiLabelBinarizer().fit_transform(larger_than_zero)
+
+
+train = larger_one_hot[0:int(len(larger_one_hot)*.8)]
+test = larger_one_hot[int(len(larger_one_hot)*.8):int(len(larger_one_hot))]
+
+
+## the array needs to be the currently iterated inner array
+## find indices for all 1's in array, which corresponds to an occurence of a business
+def remove_business_and_create_label(array):
+  indices = np.where(array == 1)[0]
+  rand_index = indices[randint(0,indices.size-1)]
+  array[rand_index] = 0
+  label = np.zeros(array.size)
+  label[rand_index] = 1
+  return label
+
+
+y_values = np.empty(train.shape)
+for i in range(train.shape[0]):
+  array = train[i]
+  label = remove_business_and_create_label(array)
+  y_values[i] = label
+
+
+y_values_test = np.empty(test.shape)
+for i in range(test.shape[0]):
+  array = test[i]
+  label = remove_business_and_create_label(array)
+  y_values_test[i] = label
 
 
 
 
-train = final_grouping[0:int(len(final_grouping)*.8)]
-test = final_grouping[int(len(final_grouping)*.8):int(len(final_grouping))]
-    
+classifier = RandomForestClassifier(n_estimators = 10, criterion = 'entropy', random_state = 42)
+mlp_classifier = MLPClassifier(hidden_layer_sizes=(100,100,100), max_iter=500, alpha=0.0001, solver='sgd', verbose=10,  random_state=21,tol=0.000000001)
+
+mlp_classifier.fit(train,y_values)
+classifier.fit(train, y_values)
+print('Train:')
+print('Accuracy score on test dataset: ')
+print(classifier.score(test, y_values_test))
 
 
-model = gensim.models.Word2Vec(train, size=300,window=200,min_count=2,workers=10, sg=0)
-model.train(train, total_examples=len(train), epochs=3000, compute_loss=True)
-
-model.save("word2vec.model")
-
-correct_predictions = 0
-incorrect_predictions = 0
-for i in range(len(test)):
-  
-  missing_biz = test[i].pop(0)
-  if(len(test[i]) > 0):
-    code_prediction = model.predict_output_word(test[i])
-    testing_list = []
-    for j in range(len(code_prediction)):
-      testing_list.append(code_prediction[j][0])
-    if (missing_biz in testing_list[0]):
-      correct_predictions = correct_predictions + 1
-    else:
-      incorrect_predictions = incorrect_predictions + 1
-
-accuracy = float(correct_predictions)/(float(correct_predictions)+float(incorrect_predictions))
 
 
-print('Correct predictions: ')
-print(correct_predictions)
-print('Incorrect predictions: ')
-print(incorrect_predictions)
-print('Accuracy: ')
-print(accuracy)
+
+
+
+
+
+
 

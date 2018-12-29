@@ -105,6 +105,9 @@ for i in range(len(sentences)):
     final_grouping[i].append(str(current_block.iloc[j,2]))
 
 
+
+
+
 random.shuffle(final_grouping)
 
 train = final_grouping[0:int(len(final_grouping)*.8)]
@@ -122,22 +125,13 @@ for i in range(len(test)):
 		testing_list = []
 		for j in range(len(code_prediction)):
 			testing_list.append(code_prediction[j][0])
-		if (missing_biz in testing_list):
+		if (missing_biz in testing_list[0]):
 			correct_predictions = correct_predictions + 1
 		else:
 			incorrect_predictions = incorrect_predictions + 1
 
 accuracy = float(correct_predictions)/(float(correct_predictions)+float(incorrect_predictions))
 
-
-maxi = len(final_grouping[0])
-for i in range(len(final_grouping)):
-  if(maxi < len(final_grouping[i])):
-    maxi = len(final_grouping[i]) 
-    
-print(maxi)
-
-print(max(len(elem) for elem in final_grouping))
 
 print(correct_predictions)
 print(incorrect_predictions)
